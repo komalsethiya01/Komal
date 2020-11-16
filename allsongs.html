@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<style>
+  body{
+	margin: 0;
+	padding:0;
+	height:4660px;
+  background-image:linear-gradient(to bottom,#111313f3,#18191a);
+  
+	overflow: scroll;
+	}
+	h1{
+ text-align: center; font-size: 1.8rem;
+ color: #fff; padding: 30px 0; 
+}
+	.music-container
+	{
+		font-family:Tahoma, Geneva, sans-serif;
+		width:100%;
+		
+		position:absolute;
+		}
+	.music-header
+	{
+		width:100%;
+		height:60px;
+		border-bottom:1px solid rgb(24, 23, 23);
+		background-image: linear-gradient(#3c3e3f, #000000);
+	}
+	.music-header .fa-angle-left
+	{
+		float:left;
+		margin-left:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+		
+	.music-header .fa-search
+	{
+		float:right;
+		margin-top:5px;
+		margin-right:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+	.music-header .title
+	{
+		width:250px;
+		height:30px;
+		position:absolute;
+		margin-left:600px;
+		top:-5px;
+		color: whitesmoke;
+		text-align:center;
+		padding-left:10px;
+		font-size: 35px;
+		font-weight: bold;
+		cursor:pointer;
+	}
+		
+	.music-playlist
+	{
+		width:100%;
+		height:100%;}
+		
+	.music-box{
+		width:100%;
+		
+	}
+	.music-box .fa-ellipsis-v{
+		margin-right:60px;
+		margin-top:22px;
+		font-weight:normal;
+		color:#e1e1e1;
+		cursor:pointer;}
+	
+	.music-info{
+		width:100%;
+		height: 50px;
+		display:flex;}
+		
+	.music-img{
+		width:60px;
+		height:60px;
+		
+	}
+	.music-img img.rounded-corners{
+		border-radius: 7px;
+	}	
+	.music-img img
+	{
+		width:65px;
+		height:65px;
+		margin-left:50px;
+		padding: 1px;
+		margin-bottom: auto;
+
+		}
+
+	.music-name{
+		width:100%;
+		padding:0 5px;
+		height:50px;
+		cursor:pointer;
+
+	}	
+	.music-name h6{
+		margin-top:20px;
+		margin-left: 100px;
+		
+		font-weight:bolder;
+		letter-spacing:0.5px;
+		cursor:pointer;
+		line-height:15px;
+		font-size: 30px;
+		color: #fff;
+	}	
+	.music-name p{
+		font-size:30px;
+		line-height:1px;
+		margin-top: -15px;
+		margin-left: 800px;
+		letter-spacing:0.5px;
+		color:grey;
+		cursor:pointer;}
+	hr{
+		width:95%;
+		margin-top:20px !important;
+		margin-bottom:20px !important;
+		margin-right: 50px;
+		}
+		
+
+	.all-songs p{
+		color:whitesmoke;
+		left:50px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	.all-songs h{
+		color: whitesmoke;
+		right:500px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+</style>
+<body>
+  <div class="music-container">
+
+    <div class="music-header">
+      <i onclick="window.open('Home.html','_self');" class="fa fa-angle-left fa-3x"></i>
+            <div class="title">
+                <p>MFusion</p>
+              </div>
+            <i class="fa fa-search fa-2x"></i>
+    </div>
+      <div class="music-playlist">
+          <div class="all-songs">
+              <p>All Songs</p>
+              <h>Artist</h>
+          </div>
+      <div class="modal-dialog modal-dialog-centered"></div>	
+          <div class="music-box">
+              
+            <div class="music-info">
+                <div class="music-img">
+                    <img src="https://www.quirkybyte.com/wp-content/uploads/2018/12/ararara-pravin-tarde.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Aarara</h6>
+                      <p>Adarsh Shinde</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+              
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="http://a10.gaanacdn.com/images/song/88/24643688/crop_480x480_1544078542.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Aankh Marey</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+              
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/52/58152/crop_480x480_58152.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Abhi Mujh Mein Kahin</h6>
+                      <p>Sonu Nigam</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="http://i1.ytimg.com/vi/G5Yo05uQ-P8/maxresdefault.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Baby</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/73/2668573/crop_480x480_2668573.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Beautiful People</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/45/26846345/crop_480x480_1558696254.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Bekhayali</h6>
+                      <p>Arjit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/49/1778849/crop_175x175_1778849.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Channa Mereya</h6>
+                      <p>Arjit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/0/25433500/crop_480x480_1549262875.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Coca Cola Tu</h6>
+                      <p>Tony Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://i2.wp.com/www.fitmixmom.com/wp-content/uploads/2018/01/havana_camila_cabello_album_cover-300x300.png?resize=150%2C150&ssl=1" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Consequences</h6>
+                      <p>Camila Cabello</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/82/2281982/crop_480x480_2281982.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Deva Tujhya Gabharyala</h6>
+                      <p>Adarash Shinde</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dilbar_cover_art.jpeg/220px-Dilbar_cover_art.jpeg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Dilbar</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+             
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://m.media-amazon.com/images/M/MV5BODA4MjM2ODk4OF5BMl5BanBnXkFtZTcwNDgzODk1OQ@@._V1_UY1200_CR99,0,630,1200_AL_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Dilliwaali Girlfriend</h6>
+                      <p>Arjit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Galway Girl</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://c.saavncdn.com/881/Ghungroo-From-War--Hindi-2019-20190905050753-500x500.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Ghungroo</h6>
+                      <p>Arjit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://1.bp.blogspot.com/-g1Pz4wL1GFM/VV1VL64kpCI/AAAAAAAAICA/KfOe1nKx3ow/w680/Hamari-Adhuri-Kahani.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Hasi  Ban Gaye</h6>
+                      <p>Shreya Goshal</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Happier</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://i2.wp.com/www.fitmixmom.com/wp-content/uploads/2018/01/havana_camila_cabello_album_cover-300x300.png?resize=150%2C150&ssl=1" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Havana</h6>
+                      <p>Camila Cabello</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Holy_-_Justin_Bieber.png/220px-Holy_-_Justin_Bieber.png" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Holy</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/94/2556294/crop_480x480_1557468759_2556294.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>I Don't Care</h6>
+                      <p>Ed sheeran,Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://i.pinimg.com/originals/24/06/0b/24060b01fa7dcc9bff4193e9d8d557e0.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Imagination</h6>
+                      <p>Shawn Mendes</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/71/2095771/crop_480x480_2095771.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>In My Blood</h6>
+                      <p>Shawn Mendes</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/26/3021226/crop_175x175_3021226.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Intentions</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/28/57228/crop_175x175_57228.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Kal Ho Na Ho</h6>
+                      <p>Sonu Nigam</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/39/1726239/crop_480x480_1726239.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Kala Chashma</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/gn_img/albums/9MAWe97WyJ/MAWeOnLqKy/size_xxl_1567516167.webp" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Khairiyat</h6>
+                      <p>Arjit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/75/1734375/crop_480x480_1734375.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Let Me Love You</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://images.hungama.com/c/1/ea7/f75/16755464/16755464_300x300.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Love Yourself</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/89/89/crop_175x175_89.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Me Agar Kahu</h6>
+                      <p>Sonu Nigam</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/98/2462698/crop_480x480_2462698.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Mala Ved Lagale Premache</h6>
+                      <p>Ketaki Mategaonkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/30/27751030/crop_480x480_1563172659.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>O Saki Saki</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/57/28026957/crop_480x480_1566542675.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Pachtaoge</h6>
+                      <p>Arijit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Perfect</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://3.bp.blogspot.com/-VigDROfrSG8/Vx2kA2eMGvI/AAAAAAAAAKk/k7KY7yGm4igE4bQPgdzmFUjM1EbzeM0yQCLcB/s1600/81iAXmZi7CL._SL1500_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Photograph</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/26/28996126/crop_480x480_1575814356.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Puchda Hi Nahi</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/61/1728261/crop_480x480_1728261.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Sairat Zala Ji</h6>
+                      <p>Ajay Gogavale</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://i.ytimg.com/vi/13z2kF6TiCc/maxresdefault.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Sanu Ek Pal</h6>
+                      <p>Neha Kakkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://i1.sndcdn.com/artworks-000583309487-rorg57-t500x500.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Senorita</h6>
+                      <p>Camila Cabello, Shawn Mendes</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Shape Of You</h6>
+                      <p>Ed Sheeran</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://media.glamour.com/photos/569582028fa134644ec26d5a/master/pass/entertainment-2015-11-justin-bieber-sorry-music-video-main.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Sorry</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://static.toiimg.com/photo/63925423.cms" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Sunn Raha Hai Na Tu</h6>
+                      <p>Shreya Ghoshal</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/6/1765106/crop_480x480_1765106.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Sunya Sunya</h6>
+                      <p>Ketaki Mategaonkar</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/38/24612938/crop_480x480_1543803167.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Thumkat Naar</h6>
+                      <p>Adarsh Shinde</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/82/2281982/crop_175x175_2281982.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Tik Tik</h6>
+                      <p>Sonu Nigam</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="http://images.indiatvnews.com/entertainmentbollywood/Palatsong-Mainterahero.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Tera Dhyaan Kidhar Hai</h6>
+                      <p>Arijit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/song/11/26974811/crop_480x480_1559305408.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Tujhe Kitna Chahne Lage</h6>
+                      <p>Arijit Singh</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/6/1765106/crop_480x480_1765106.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Vaat Disu De</h6>
+                      <p>Ajay Gogavale</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://uproxx.com/wp-content/uploads/2020/09/shawn-mendes-wonder-Island-grid.jpg?w=710" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Wonder</h6>
+                      <p>Shawn Mendes</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/61/1728261/crop_480x480_1728261.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Yad Lagla</h6>
+                      <p>Ajay Gogavale</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://a10.gaanacdn.com/images/albums/45/2966145/crop_480x480_2966145.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Yummy</h6>
+                      <p>Justin Bieber</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+  
+              <div class="music-info">
+                <div class="music-img">
+                    <img src="https://images.hungama.com/c/1/95d/27c/17440121/17440121_300x300.jpg" class="wdn-stretch rounded-corners">
+                  </div>
+                  <div class="music-name">
+                      <h6>Zingaat</h6>
+                      <p>Ajay-Atul</p>
+                  </div>
+                  <i class="fa fa-ellipsis-v"></i>
+              </div><hr>
+              
+              
+          </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
