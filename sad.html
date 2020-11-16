@@ -1,0 +1,332 @@
+<head>
+    <title>Music App</title>
+    <link rel="stylesheet" href="abc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        body{
+	margin: 0;
+	padding:0;
+    
+   background-image:url("https://www.goodtherapy.org/blog/blog/wp-content/uploads/2014/12/man-with-head-down-300x300.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+	}
+	h1{
+ text-align: center; font-size: 1.8rem;
+ color: #fff; padding: 30px 0; 
+}
+	.music-container
+	{
+		font-family:Tahoma, sans-serif;
+		width:100%;
+		
+		position:absolute;
+		}
+	.music-header
+	{
+		width:100%;
+		height:60px;
+		border-bottom:1px solid rgb(24, 23, 23);
+		background-image: linear-gradient(#3c3e3f, #000000);
+	}
+	.music-header .fa-angle-left
+	{
+		float:left;
+		margin-left:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+		
+	.music-header .fa-search
+	{
+		float:right;
+		margin-top:5px;
+		margin-right:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+	.music-header .title
+	{
+		width:250px;
+		height:30px;
+		position:absolute;
+		margin-left:600px;
+		top:-5px;
+		color: whitesmoke;
+		text-align:center;
+		padding-left:10px;
+		font-size: 35px;
+		font-weight: bold;
+		cursor:pointer;
+	}
+		
+	.music-playlist
+	{
+		width:100%;
+		height:100%;}
+		
+	.music-box{
+		width:100%;
+		
+	}
+	.music-box .fa-ellipsis-v{
+		margin-right:60px;
+		margin-top:22px;
+		font-weight:normal;
+		color:#e1e1e1;
+		cursor:pointer;}
+	
+	.music-info{
+		width:100%;
+		height: 50px;
+		display:flex;}
+		
+	.music-img{
+		width:60px;
+		height:60px;
+		
+	}
+	.music-img img.rounded-corners{
+		border-radius: 7px;
+	}	
+	.music-img img
+	{
+		width:65px;
+		height:65px;
+		margin-left:50px;
+		padding: 1px;
+		margin-bottom: auto;
+
+		}
+
+	.music-name{
+		width:100%;
+		padding:0 5px;
+		height:50px;
+		cursor:pointer;
+
+	}	
+	.music-name h6{
+		margin-top:20px;
+		margin-left: 100px;
+		
+		font-weight:bolder;
+		letter-spacing:0.5px;
+		cursor:pointer;
+		line-height:15px;
+		font-size: 30px;
+		color: #fff;
+	}	
+	.music-name p{
+		font-size:30px;
+		line-height:1px;
+		margin-top: -15px;
+		margin-left: 800px;
+		letter-spacing:0.5px;
+		color:rgb(14, 13, 13);
+		cursor:pointer;}
+	hr{
+		width:95%;
+		margin-top:20px !important;
+		margin-bottom:20px !important;
+		margin-right: 50px;
+		}
+		
+
+	.all-songs p{
+		color:whitesmoke;
+		left:50px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	.all-songs h{
+		color: whitesmoke;
+		right:500px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+    </style>
+    <body>
+    
+    <div class="music-container">
+        
+        <div class="music-header">
+            <i onclick="window.open('Home.html','_self');" class="fa fa-angle-left fa-3x"></i>
+                <div class="title">
+                    <p>MFusion</p>
+                </div>
+                <i class="fa fa-search fa-2x"></i>
+        </div>
+        <div class="music-playlist">
+            <div class="all-songs">
+                <p>Sad Songs</p>
+                <h>Artist</h>
+            </div>
+        <div class="modal-dialog modal-dialog-centered"></div>	
+            <div class="music-box">
+                
+                <div class="music-info">
+                    <div class="music-img">
+                        <img src="https://a10.gaanacdn.com/images/albums/52/58152/crop_480x480_58152.jpg" class="wdn-stretch rounded-corners">
+                      </div>
+                      <div class="music-name">
+                          <h6>Abhi Mujh Mein Kahin</h6>
+                          <p>Sonu Nigam</p>
+                      </div>
+                      <i class="fa fa-ellipsis-v"></i>
+                  </div><hr>
+
+                  <div class="music-info">
+                    <div class="music-img">
+                        <img src="https://a10.gaanacdn.com/images/song/45/26846345/crop_480x480_1558696254.jpg" class="wdn-stretch rounded-corners">
+                      </div>
+                      <div class="music-name">
+                          <h6>Bekhayali</h6>
+                          <p>Arjit Singh</p>
+                      </div>
+                      <i class="fa fa-ellipsis-v"></i>
+                  </div><hr>
+                
+                
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/49/1778849/crop_175x175_1778849.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Channa Mereya</h6>
+          <p>Arjit Singh</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://i2.wp.com/www.fitmixmom.com/wp-content/uploads/2018/01/havana_camila_cabello_album_cover-300x300.png?resize=150%2C150&ssl=1" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Consequences</h6>
+          <p>Camila Cabello</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/82/2281982/crop_480x480_2281982.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Deva Tujhya Gabharyala</h6>
+          <p>Adarash Shinde</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://i.pinimg.com/originals/24/06/0b/24060b01fa7dcc9bff4193e9d8d557e0.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Imagination</h6>
+          <p>Shawn Mendes</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/71/2095771/crop_480x480_2095771.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>In My Blood</h6>
+          <p>Shawn Mendes</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/28/57228/crop_175x175_57228.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Kal Ho Na Ho</h6>
+          <p>Sonu Nigam</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://images.hungama.com/c/1/ea7/f75/16755464/16755464_300x300.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Love Yourself</h6>
+          <p>Justin Bieber</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/song/57/28026957/crop_480x480_1566542675.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Pachtaoge</h6>
+          <p>Arijit Singh</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/6/1765106/crop_480x480_1765106.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Sunya Sunya</h6>
+          <p>Ketaki Mategaonkar</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://a10.gaanacdn.com/images/albums/6/1765106/crop_480x480_1765106.jpg" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Vaat Disu De</h6>
+          <p>Ajay Gogavale</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+  <div class="music-info">
+    <div class="music-img">
+        <img src="https://uproxx.com/wp-content/uploads/2020/09/shawn-mendes-wonder-Island-grid.jpg?w=710" class="wdn-stretch rounded-corners">
+      </div>
+      <div class="music-name">
+          <h6>Wonder</h6>
+          <p>Shawn Mendes</p>
+      </div>
+      <i class="fa fa-ellipsis-v"></i>
+  </div><hr>
+
+
+                
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>

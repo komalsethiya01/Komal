@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Shreya</title>
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+	padding:0;
+	height:4660px;
+  background-image:linear-gradient(to bottom,#111313f3,#18191a);
+  
+	overflow: scroll;
+}
+
+/*body {
+  /* The image used */
+ /* background-image: url("https://225508-687545-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/03/Shreya-Ghoshal.jpg");
+  /* Full height */
+ /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+/*.bg{
+position: relative;
+top: 200px;
+}*/
+	h1{
+ text-align: center; font-size: 1.8rem;
+ color: #fff; padding: 30px 0; 
+}
+	.music-container
+	{
+		font-family:Tahoma, Geneva, sans-serif;
+		width:100%;
+		
+		position:absolute;
+		}
+	.music-header
+	{
+		width:100%;
+		height:60px;
+		border-bottom:1px solid rgb(24, 23, 23);
+		background-image: linear-gradient(#3c3e3f, #000000);
+	}
+	.music-header .fa-angle-left
+	{
+		float:left;
+		margin-left:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+		
+	.music-header .fa-search
+	{
+		float:right;
+		margin-top:5px;
+		margin-right:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+	.music-header .title
+	{
+		width:250px;
+		height:30px;
+		position:absolute;
+		margin-left:600px;
+		top:-5px;
+		color: whitesmoke;
+		text-align:center;
+		padding-left:10px;
+		font-size: 35px;
+		font-weight: bold;
+		cursor:pointer;
+	}
+		
+	.music-playlist
+	{
+		width:100%;
+		height:100%;}
+		
+	.music-box{
+		width:100%;
+		
+	}
+	.music-box .fa-ellipsis-v{
+		margin-right:60px;
+		margin-top:22px;
+		font-weight:normal;
+		color:#e1e1e1;
+		cursor:pointer;}
+	
+	.music-info{
+		width:100%;
+		height: 50px;
+		display:flex;}
+		
+	.music-img{
+		width:60px;
+		height:60px;
+		
+	}
+	.music-img img.rounded-corners{
+		border-radius: 7px;
+	}	
+	.music-img img
+	{
+		width:65px;
+		height:65px;
+		margin-left:50px;
+		padding: 1px;
+		margin-bottom: auto;
+
+		}
+
+	.music-name{
+		width:100%;
+		padding:0 5px;
+		height:50px;
+		cursor:pointer;
+
+	}	
+	.music-name h6{
+		margin-top:20px;
+		margin-left: 100px;
+		
+		font-weight:bolder;
+		letter-spacing:0.5px;
+		cursor:pointer;
+		line-height:15px;
+		font-size: 30px;
+		color: #fff;
+	}	
+	.music-name p{
+		font-size:30px;
+		line-height:1px;
+		margin-top: -15px;
+		margin-left: 800px;
+		letter-spacing:0.5px;
+		color:grey;
+		cursor:pointer;}
+	hr{
+		width:95%;
+		margin-top:20px !important;
+		margin-bottom:20px !important;
+		margin-right: 50px;
+		}
+		
+
+	.all-songs p{
+		color:whitesmoke;
+		left:50px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	.all-songs h{
+		color: whitesmoke;
+		right:500px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+    }
+    #sh{
+          
+          display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 800px;
+height: 500px;
+  opacity:50%;
+    }
+</style>
+<body>
+    
+ <div id="bg">
+	<div class="music-container">
+
+		<div class="music-header">
+		  <i  class="fa fa-angle-left fa-3x"></i>
+				<div class="title">
+					<p>MFusion</p>
+				  </div>
+				<i class="fa fa-search fa-2x"></i>
+		</div>
+		  <div class="music-playlist">
+			  <div class="all-songs">
+				 
+			  </div>
+		  <div class="modal-dialog modal-dialog-centered"></div>	
+			  <div class="music-box">
+		 
+          <div class="img">
+            <img id="sh" src="https://225508-687545-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/03/Shreya-Ghoshal.jpg">
+          
+				  <div class="music-info">
+					<div class="music-img">
+						<img src="https://1.bp.blogspot.com/-g1Pz4wL1GFM/VV1VL64kpCI/AAAAAAAAICA/KfOe1nKx3ow/w680/Hamari-Adhuri-Kahani.jpg" class="wdn-stretch rounded-corners">
+					  </div>
+					  <div class="music-name">
+						  <h6>Hasi  Ban Gaye</h6>
+						 
+					  </div>
+					  <i class="fa fa-ellipsis-v"></i>
+				  </div><hr>
+	  
+				  
+				  <div class="music-info">
+					<div class="music-img">
+						<img src="https://static.toiimg.com/photo/63925423.cms" class="wdn-stretch rounded-corners">
+					  </div>
+					  <div class="music-name">
+						  <h6>Sunn Raha Hai Na Tu</h6>
+					   
+					  </div>
+					  <i class="fa fa-ellipsis-v"></i>
+				  </div><hr>
+          </div>
+				 
+				  
+				  
+			  </div>
+		</div>
+	  </div>
+	  </div>
+ </div>
+</body>
+</html>

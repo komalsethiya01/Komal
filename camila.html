@@ -1,0 +1,202 @@
+<head>
+    <title>Music App</title>
+    <link rel="stylesheet" href="abc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        body{
+	margin: 0;
+	padding:0;
+    
+    background-image:url("https://image.shutterstock.com/image-vector/abstract-purple-background-260nw-1228609438.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+	
+	}
+	h1{
+ text-align: center; font-size: 1.8rem;
+ color: #fff; padding: 30px 0; 
+}
+	.music-container
+	{
+		font-family:Tahoma, sans-serif;
+		width:100%;
+		
+		position:absolute;
+		}
+	.music-header
+	{
+		width:100%;
+		height:60px;
+		border-bottom:1px solid rgb(24, 23, 23);
+		background-image: linear-gradient(#3c3e3f, #000000);
+	}
+	.music-header .fa-angle-left
+	{
+		float:left;
+		margin-left:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+		
+	.music-header .fa-search
+	{
+		float:right;
+		margin-top:5px;
+		margin-right:10px;
+		cursor:pointer;
+	color: whitesmoke;}
+	.music-header .title
+	{
+		width:250px;
+		height:30px;
+		position:absolute;
+		margin-left:600px;
+		top:-5px;
+		color: whitesmoke;
+		text-align:center;
+		padding-left:10px;
+		font-size: 35px;
+		font-weight: bold;
+		cursor:pointer;
+	}
+		
+	.music-playlist
+	{
+		width:100%;
+		height:100%;}
+		
+	.music-box{
+		width:100%;
+		
+	}
+	/*.music-box .fa-ellipsis-v{
+		margin-right:60px;
+		margin-top:22px;
+		font-weight:normal;
+		color:#e1e1e1;
+		cursor:pointer;}*/
+	
+	.music-info{
+		width:100%;
+		height: 50px;
+		display:flex;}
+		
+	.music-img{
+		width:60px;
+		height:60px;
+		position: relative;
+		
+	}
+	.music-img img.rounded-corners{
+		border-radius: 7px;
+	}	
+	.music-img img
+	{
+		width:65px;
+		height:65px;
+		margin-left:50px;
+		padding: 1px;
+		margin-bottom: auto;
+
+		}
+
+	.music-name{
+		width:100%;
+		padding:0 5px;
+		height:50px;
+		cursor:pointer;
+		position: relative;
+
+	}	
+	.music-name h6{
+		margin-top:20px;
+		margin-left: 100px;
+		
+		font-weight:bolder;
+		letter-spacing:0.5px;
+		cursor:pointer;
+		line-height:15px;
+		font-size: 30px;
+		color: #fff;
+	}	
+	.music-name p{
+		font-size:30px;
+		line-height:1px;
+		margin-top: -15px;
+		margin-left: 800px;
+		letter-spacing:0.5px;
+		color:rgb(104, 8, 8);
+		cursor:pointer;}
+	hr{
+		width:95%;
+		margin-top:20px !important;
+		margin-bottom:20px !important;
+		margin-right: 50px;
+		}
+		
+
+	.all-songs p{
+		color:whitesmoke;
+		left:50px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	.all-songs h{
+		color: whitesmoke;
+		right:500px;
+		top:60px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	#abc{
+		height: 250px;
+		width: 200px;
+		border-radius: 50%;
+		align-self: center;
+		border-style: ridge;
+	}
+	.art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+    </style>
+    <body>
+    
+    <div class="music-container">
+        
+        <div class="music-header">
+            <i onclick="window.open('Home.html','_self');" class="fa fa-angle-left fa-3x"></i>
+                <div class="title">
+                    <p>MFusion</p>
+                </div>
+                <i class="fa fa-search fa-2x"></i>
+        </div>
+        <div class="music-playlist">
+            <div class="all-songs">
+                
+            </div>
+        <div class="modal-dialog modal-dialog-centered"></div>	
+            <div class="music-box">
+
+				<div class="art">
+					<center><img id="abc" src="https://ca-times.brightspotcdn.com/dims4/default/38611ed/2147483647/strip/true/crop/4480x3240+0+0/resize/840x608!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc2%2F6c%2Fd3e4309d457e9c7ef2e26dd7c358%2Fla-photos-1staff-472211-ca-1122-camila-cabello-10-cmc.jpg"> </center>
+				</div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>
