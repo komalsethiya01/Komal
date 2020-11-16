@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+  body,html{
+    background-color: rgb(15, 15, 15);
+  }  
+      #greeks{
+        height: 100vh; 
+    width: 100vw;               
+    margin: 0px;          
+    background-color: rgb(15, 15, 15);
+        
+      }
+      #back{
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(32, 32, 32);
+    position: relative;
+    top: -485px;
+    opacity: 25%;
+}
+#search{
+    position: relative;
+    left: -80px;
+    top: 8px;
+    width: 450px;
+    height: 35px;
+    border-radius: 15px;
+    float: right;
+    background-color:rgb(220,220,220);
+    
+}
+::placeholder{
+    color: black;
+}
+#artist1{
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+  top: 100px;
+  font-family: 'Balsamiq Sans', cursive;
+
+}
+.art{
+  height: 120px;
+  width: 110px;
+  border-radius: 100%;
+}
+#ed{
+  position: relative;
+  left: -20px;
+  top: 100px;
+  
+}
+#arijit{
+  position: relative;
+  left: -90px;
+  top: 100px;
+  
+}
+#neha{
+  position: relative;
+  left: -160px;
+  top: 100px;
+  
+}
+#ajay{
+  position: relative;
+  left: -237px;
+  top: 100px;
+  
+}
+#shawn{
+  position: relative;
+  left: -317px;
+  top: 100px;
+  
+}
+#shreya{
+  position: relative;
+  left: -415px;
+  top: 100px;
+  
+}
+#camila{
+  position: relative;
+  left: -520px;
+  top: 100px;
+  
+}
+#adarsh{
+  position: relative;
+  left: -550px;
+  top: 100px;
+  
+}
+#sonu{
+  position: relative;
+  left: -645px;
+  top: 100px;
+  
+}
+#justin{
+  position: relative;
+  left: -735px;
+  top: 100px;
+  
+}
+#romantic{
+        position: relative;
+        top: -1080px;
+        left: 340px;
+        opacity: 0.4;
+        border-radius:20px;
+    }
+    #romantic1{
+        position: relative;
+        top: -1190px;
+        left: 380px;
+        font-size: 35px;
+        color:  white;
+        font-weight: bold;
+    }
+    #sad{
+        position: relative;
+        top: -1300px;
+        left: 600px;
+        opacity: 0.4;
+        border-radius:20px;
+    }
+    #sad1{
+        position: relative;
+        top: -1400px;
+        left: 680px;
+        font-size: 35px;
+        color:  white;
+        font-weight: bold;
+    }
+    #party{
+        position: relative;
+        top: -1350px;
+        left: 340px;
+        opacity: 0.4;
+        border-radius:20px;
+    }
+    #party1{
+        position: relative;
+        top: -1450px;
+        left: 405px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+    }
+    #happy{
+        position: relative;
+        top: -1560px;
+        left: 600px;
+        opacity: 0.4;
+        border-radius:20px;
+    }
+    #happy1{
+        position: relative;
+        top: -1660px;
+        left: 665px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+    }
+    .songs{
+        height: 150px;
+        width: 220px;
+    }
+    .internal{
+ /*width: 12%;
+ height: 60%;*/
+ /*border: 1px solid black;*/
+ display: inline;
+}
+    .left{
+ float: left;
+ position: relative;
+ top: 125px;
+ left: 320px;
+ width: 30%;
+ height: 200px;
+ border: 0px solid black;
+    }
+
+.center{
+ position:relative;
+ top: -60px;
+ left: -100px;
+ width: 65.5%;
+ height: 400px;
+ border: 0px solid black;
+ margin: 0px;
+ padding: 50px;
+ text-align: left;
+ overflow: hidden;
+ /*will change this to hidden later to deny scolling to user*/
+ white-space: nowrap;
+}
+
+
+.right{
+ float: right; 
+ position: relative;
+ top: -277px;
+ left: 310px;
+ width: 30%;
+ height: 200px;
+ border: 0px solid black;
+}
+#ed1{
+  position: relative;
+  top: 185px;
+  left: -125px;
+  
+}
+#arijit1{
+  position: relative;
+  top: 185px;
+  left: -200px;
+  
+}
+#neha1{
+  position: relative;
+  top: 185px;
+  left: -279px;
+}
+#ajay1{
+  position: relative;
+  top: 185px;
+  left: -360px;
+  
+}
+#shawn1{
+  position: relative;
+  top: 185px;
+  left: -440px;
+  
+}
+#shreya1{
+  position: relative;
+  top: 185px;
+  left: -535px;
+  
+}
+#camila1{
+  position: relative;
+  top: 185px;
+  left: -610px;
+  
+}
+#adarsh1{
+  position: relative;
+  top: 185px;
+  left: -670px;
+  
+}
+#sonu1{
+  position: relative;
+  top: 185px;
+  left: -760px;
+  
+}
+#justin1{
+  position: relative;
+  top: 185px;
+  left: -845px;
+  
+}
+.songs {
+  transition: transform .2s; /* Animation */
+
+}
+.songs:hover{
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: darkblue;
+    border-color: brown;
+    border-radius:20px ;
+    border: 10px;
+}
+.name{
+  font-size: 18px;
+  padding: 4px;
+  background-color: antiquewhite;
+  color: rgba(81, 17, 94, 0.986);
+  border-radius: 15px;
+  border: 2px solid rgb(241, 237, 237);
+  text-shadow: 0 0 1px #e6530f, 0 0 1px #ececf5;
+}
+.art:hover{
+  color: blue;
+  box-shadow: 0 10px 50px rgba(123, 240, 240, 0.2);
+  opacity: 0.5;
+}
+#letter{
+  transition: transform .3s;
+}
+
+#letter:hover{
+  border-radius: 0%;
+  border-style: groove;
+  border-color: rgb(49, 12, 12);
+  border-width: thick;
+  transform: scale(2.5);
+}
+#letter{
+    position: relative;
+    top: -1900px;
+    left: 1095px;
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+}
+#top{
+    border-radius: 50px;
+    position: relative;
+    top: -2000px;
+    left: 1250px;
+}
+/*#collapse:hover{
+    background-color: rgb(218, 241, 10);
+}*/
+/*#collapse{
+    font-weight: bold;
+    position: relative;
+    color: rgb(13, 19, 80);
+    left: 50px;
+    top: -1150px;
+    padding: 3px;
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+  background-color: rgb(122, 190, 94);
+  border-radius: 15px;
+  border: 2px solid rgb(241, 237, 237);
+}*/
+/*#all{
+    font-size: 20px;
+    position: relative;
+    
+}*/
+a:link, a:visited {
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    position: relative;
+    color: rgb(13, 19, 80);
+    left: 50px;
+    top: -1150px;
+    padding: 3px;
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+  background-color: rgb(122, 190, 94);
+  border-radius: 15px;
+  border: 2px solid rgb(241, 237, 237);
+  display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgb(218, 241, 10);
+}
+#profile{
+    font-size: 20px;
+    position: relative;
+    
+}
+#fav{
+    font-size: 20px;
+    position: relative;
+    
+}
+#playlist{
+    font-size: 20px;
+    position: relative;
+    
+}
+#mood{
+  color: white;
+  font-size: 30px;
+   position: relative;
+  left: 350px;
+  top: -1100px; 
+  font-family: 'Balsamiq Sans', cursive;
+
+}
+
+  </style>
+  <body >
+    <div id="geeks"> 
+        <form>
+        <input type="text" id="search" placeholder="Search">
+       </form>
+    <div class="artist">
+      <p id="artist1">Artists</p>
+      <div class="left">
+        <button id="left-button">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+        </button>
+        </div>
+     <div class="center" id="content">
+        
+          <div class="internal">
+           <img id="ed" class="art" onclick="window.open('edsheeran.html','_self');" src="https://i.pinimg.com/originals/ed/7b/92/ed7b920a3293d9a77bac392a9379f19e.jpg">
+          <span class="name" id="ed1">Ed Sheeran</span>
+          </div>
+         
+          <div class="internal">
+            <img id="arijit" class="art" onclick="window.open('arijit.html','_self');" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/arijit-singh-1048083-24-03-2017-18-02-00.jpg">
+            <span class="name" id="arijit1">Arijit Singh</span>
+          </div>
+          <div class="internal"> 
+          <img id="neha" class="art" onclick="window.open('neha.html','_self');" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Neha_Kakkar_Birthday_Bash.jpg">
+          <span class="name" id="neha1">Neha Kakkar</span>  
+        </div>
+          <div class="internal">
+            <img id="ajay" class="art" onclick="window.open('ajay.html','_self');" src="https://images.hungama.com/a/1/050/400/18372/18372_175x175.jpg">
+            <span class="name" id="ajay1">Ajay Gogavale</span>
+          </div>
+          <div class="internal">
+            <img id="shawn" class="art" onclick="window.open('ShawnMendes.html','_self');" src="https://wallpaperaccess.com/full/2240941.jpg">
+            <span class="name" id="shawn1">Shawn Mendes</span>
+          </div>
+          <div class="internal">
+            <img id="shreya" class="art" onclick="window.open('shreya.html','_self');" src=" https://upload.wikimedia.org/wikipedia/commons/b/bd/Shreya_Ghoshal_at_Filmfare_Awards_South.jpg">
+            <span class="name" id="shreya1">Shreya Ghoshal</span>
+          </div>
+          <div class="internal">
+            <img id="camila" class="art" onclick="window.open('camila.html','_self');" src=" https://cdn.telanganatoday.com/wp-content/uploads/2019/09/12-Camila-Cabello.jpg">
+            <span class="name" id="camila1">Camila</span>
+          </div>
+          <div class="internal">
+            <img id="adarsh" class="art" onclick="window.open('aadarsh.html','_self');" src=" https://images.hungama.com/a/1/069/059/126/126_175x175.jpg">
+            <span class="name" id="adarsh1">Adarsh Shinde</span>
+          </div>
+          <div class="internal">
+            <img id="sonu" class="art" onclick="window.open('sonunigam.html','_self');" src="https://ichef.bbci.co.uk/images/ic/960x540/p05x58yd.jpg">
+            <span class="name" id="sonu1">Sonu Nigam</span>
+          </div>
+          <div class="internal">
+            <img id="justin" class="art" onclick="window.open('justin.html','_self');" src="https://static.toiimg.com/thumb/msid-67287243,imgsize-126010,width-800,height-600,resizemode-75/67287243.jpg">
+            <span class="name" id="justin1">Justin Bieber</span>
+          </div>
+       
+     </div>
+     
+     <div class="right">
+        <button id="right-button">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </button>
+     </div>
+      
+    </div>
+    <div id="back">
+      </div>
+      <div id="collapse">
+            <a href="allsongs.html" target="_self">All Songs</a>
+
+      </div> 
+      <div id="collapse">
+            <a href="allsongs.html" target="_self">Profile</a>
+      </div> 
+      <div id="collapse">
+            <a href="allsongs.html" target="_self">Favourites</a>
+      </div> 
+      <div id="collapse">
+            <a href="allsongs.html" target="_self">Playlist</a>
+      </div> 
+      </div>
+      <div id="mood">Find your mood</div>
+      
+        <div id="moods">
+            <img onclick="window.open('romantic.html','_self');" id="romantic" class="songs" src="https://s3-eu-west-1.amazonaws.com/eflanguagesblog/wp-content/uploads/2020/02/13083321/10_most_romantic_cities_hero-1.jpg">
+          <p  id="romantic1">Romantic</p>
+          <img onclick="window.open('sad.html','_self');" id="sad" class="songs" src="https://miro.medium.com/max/800/1*ApruSLUq13eawu1tZeG5Yg.jpeg">
+          <p  id="sad1">Sad</p>
+          <img onclick="window.open('party.html','_self');"id="party" class="songs" src="https://www.ctvnews.ca/polopoly_fs/1.5063738.1597360423!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg">
+          <p id="party1">Party</p>
+          <img onclick="window.open('happy.html','_self');" id="happy" class="songs" src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2016/01/compassion.jpg">
+          <p id="happy1">Happy</p>
+          </div>
+          <div class="tophits">
+        
+            <img onclick="window.open('romantic.html','_self');" id="letter" src="https://play.soundplate.com/uploads/img/5cf308f35a57b.jpg">
+            </div>
+          
+      
+
+<!-- Optional JavaScript -->
+<script>
+  const rightBtn = document.querySelector('#right-button');
+const leftBtn = document.querySelector('#left-button');
+
+rightBtn.addEventListener("click", function(event) {
+const conent = document.querySelector('#content');
+conent.scrollLeft += 100;
+event.preventDefault();
+});
+
+leftBtn.addEventListener("click", function(event) {
+const conent = document.querySelector('#content');
+conent.scrollLeft -= 100;
+event.preventDefault();
+});
+
+</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
